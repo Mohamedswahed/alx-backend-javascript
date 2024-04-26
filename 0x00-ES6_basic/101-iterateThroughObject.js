@@ -1,12 +1,14 @@
-export default function iterateThroughObject(reportWithIterator) {
-  const allEmployees = reportWithIterator.allEmployees;
-  const employeeNames = [];
+export default function createReportObject(employeesList) {
+  const allEmployees = {};
 
-  for (const department in allEmployees) {
-    const employees = allEmployees[department];
-    employeeNames.push(...employees);
+  for (const [departmentName, employees] of Object.entries(employeesList)) {
+    allEmployees[departmentName] = [...employees];
   }
 
-  return employeeNames.join(' | ');
+  return {
+    allEmployees,
+    getNumberOfDepartments() {
+      return Object.keys(employeesList).length;
+    },
+  };
 }
-
