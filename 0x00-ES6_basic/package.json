@@ -1,0 +1,17 @@
+{
+  "name": "samir",
+  "version": "1.0.0",
+  "description": "0x00-ES6 basic exercises",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
